@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T15:43:45+08:00",
+ "generated_at": "2026-10-14T17:18:47+08:00",
  "engine": "weight_calibrator_v2",
  "source": "reflect_latest.json",
  "n_records": 64250,
@@ -193,5 +193,12 @@
  "mean_bull_edge": 0.0,
  "mean_bear_edge": 7.1,
  "usage": "engine_v5.py --weights data/engine_weights.json; the engine still runs with equal weights when the file is absent",
- "disclaimer": "Weights derived from historical records. Past performance does not imply future results."
+ "disclaimer": "Weights derived from historical records. Past performance does not imply future results.",
+ "merge_note": {
+  "resolved_from": "weight_calibrator_v2",
+  "reason": "v2 scores bull and bear separately; the old calibrator averaged them and hid that every bull edge is negative",
+  "regression_guard": {
+   "mean_bear_edge_min": 5.0
+  }
+ }
 }
