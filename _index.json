@@ -1,0 +1,49 @@
+{
+ "generated_at": "2026-10-14T03:01:13.901711+08:00",
+ "warehouse": "stocks-db",
+ "n_securities_master": 6029,
+ "n_stocks_built": 6027,
+ "n_shards": 13,
+ "shards": [
+  "00",
+  "15",
+  "20",
+  "30",
+  "51",
+  "58",
+  "60",
+  "68",
+  "81",
+  "83",
+  "89",
+  "90",
+  "92"
+ ],
+ "total_files": 33119,
+ "total_bytes": 668465111,
+ "datasets": [
+  "kline/day_qfq.csv",
+  "kline/hfq.json",
+  "kline/m1.csv",
+  "kline/month_qfq.csv",
+  "kline/qfq.json",
+  "kline/week_qfq.csv",
+  "money/fflow.json",
+  "money/quote.json",
+  "technical/latest.json"
+ ],
+ "layout": {
+  "data/master/universe.json": "security master table",
+  "data/stocks/<shard>/<code>/manifest.json": "per-stock manifest",
+  "data/stocks/<shard>/<code>/kline/": "day/week/month qfq + qfq/hfq json + m1",
+  "data/stocks/<shard>/<code>/money/": "fflow five-tier + quote snapshot",
+  "data/stocks/<shard>/<code>/financial/": "ths abstracts",
+  "data/stocks/<shard>/<code>/technical/": "computed indicators",
+  "data/stocks/<shard>/<code>/sentiment/": "xueqiu follow",
+  "data/market/": "index quotes/kline, pools, margin, breadth",
+  "data/sector/": "industry/concept boards, constituents, kline",
+  "data/overseas/": "global indices, us/hk stocks, etf, kline",
+  "_by_shard/<shard>.json": "compact per-shard stock list",
+  "_search.json": "flat search index"
+ }
+}

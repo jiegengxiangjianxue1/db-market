@@ -1,0 +1,11 @@
+{
+ "generated_at": "2026-10-14T05:22:00+08:00",
+ "layout": "predictions/engine_v5_<YYYYMM>.jsonl.gz",
+ "fields": [
+  "ts",
+  "engine",
+  "n_scanned",
+  "top"
+ ],
+ "note": "engine_v5 daily snapshots, one JSON object per line"
+}

@@ -1,0 +1,59 @@
+{
+ "generated_at": "2026-10-14T03:01:13.901711+08:00",
+ "datasets": {
+  "kline/day_qfq.csv": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "kline/hfq.json": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "kline/m1.csv": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "kline/month_qfq.csv": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "kline/qfq.json": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "kline/week_qfq.csv": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "money/fflow.json": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "money/quote.json": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  },
+  "technical/latest.json": {
+   "n_stocks": null,
+   "rows": null,
+   "sources": [],
+   "note": "see _index.json"
+  }
+ }
+}
